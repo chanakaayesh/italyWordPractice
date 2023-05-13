@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="NmT">10dp</dimen>
+    <dimen name="BmT">80dp</dimen>
+    <dimen name="editTXmL">20dp</dimen>
+    <dimen name="bacgroundpadding">20dp</dimen>
+    <dimen name="editTVhight">40dp</dimen>
+    <dimen name="RVbuttonWidth">150dp</dimen>
+    <dimen name="RVbuttonheight">30dp</dimen>
+    <dimen name="paginationSize">5</dimen>
+
+</resources>

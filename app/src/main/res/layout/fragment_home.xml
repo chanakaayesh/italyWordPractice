@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myFomeFragment"
+    tools:context=".view.home.HomeFragment" >
+
+    <EditText
+        android:id="@+id/searchWord"
+        android:layout_marginTop="@dimen/NmT"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/edittextbackground"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/NmT"
+        android:layout_marginRight="@dimen/NmT"
+        android:hint="Search word"
+        android:singleLine="true"
+        android:lines="1"
+        android:paddingLeft="@dimen/NmT"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresher"
+        android:layout_below="@+id/searchWord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/NmT"
+        android:layout_marginRight="@dimen/NmT">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_word_txview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/NO_WORDS_TEXT"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.createword.CreateWordActivity"
+    android:padding="@dimen/bacgroundpadding"
+    >
+
+
+    <ImageView
+        android:id="@+id/selectImageView"
+        android:background="@drawable/imagviewdrawer"
+        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/englishEDt"
+        android:layout_marginBottom="@dimen/NmT"
+
+
+
+        />
+
+    <EditText
+
+        android:id="@+id/englishEDt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTVhight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/editTXmL"
+        android:layout_marginRight="@dimen/editTXmL"
+        android:background="@drawable/edittextbackground"
+        android:hint="Enter English word"
+        android:textAlignment="center"
+        android:nextFocusUp="@id/italyWordET"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/italyWordET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTVhight"
+        android:layout_below="@id/englishEDt"
+        android:textAlignment="center"
+        android:hint="Enter Italy Word"
+        android:layout_marginTop="@dimen/NmT"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginLeft="@dimen/editTXmL"
+        android:layout_marginRight="@dimen/editTXmL"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UpLoad"
+        android:layout_below="@id/italyWordET"
+        android:layout_marginTop="@dimen/BmT"
+        android:background="@drawable/buttnbackground"
+        android:textColor="@color/white"
+        android:onClick="SaveDat"
+        />
+    <Button
+        android:id="@+id/updateBtn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/italyWordET"
+        android:layout_marginTop="@dimen/BmT"
+        android:background="@drawable/buttnbackground"
+        android:textColor="@color/white"
+        android:onClick="UpdateDate"
+        />
+    <Button
+        android:id="@+id/deletBtn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@id/saveBtn"
+        android:layout_marginTop="@dimen/NmT"
+        android:background="@drawable/buttnbackground"
+        android:textColor="@color/white"
+        android:onClick="DeletData"
+
+        />
+</RelativeLayout>
