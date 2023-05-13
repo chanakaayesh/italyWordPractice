@@ -10,10 +10,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-
-    <string name="NO_WORDS_TEXT">NO WORDS</string>
-<!--    <string name="Username">"piumi"</string>-->
-    <string name="Username">"ayesh"</string>
-<!--    <string name="Username">"Testing"</string>-->
+    <string name="Username">"Testing"</string>
     <string name="paginationSize">5</string>
 </resources>
